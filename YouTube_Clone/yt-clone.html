@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/slime.png"> 
     <title>yt-clone-1</title>
     <link rel="stylesheet" href="stylesheet/yt-video.css">
@@ -21,7 +23,7 @@
         <input type="text" class="search" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="images/yt-header/search.svg">
-          <div class="tooltip">Search</div>
+          <div class="tooltip" id="search-tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="images/yt-header/voice-search-icon.svg">
@@ -43,8 +45,11 @@
           <div class="notifications-count">9+</div>
           <div class="tooltip">Notifications</div>
         </div>
+        <button class="right-section-search-button">
+          <img class="right-section-search-icon"src="images/yt-header/search.svg">
+        </button>
         
-        <img class="current-user-picture" src="images/pfp/profile-pic.jpg">
+        <img class="current-user-picture" id="header-pfp" src="images/pfp/profile-pic.jpg">
       </div>
       
     </header>
@@ -53,30 +58,48 @@
         <img src="images/yt-sidebar/home.svg">
         <div>Home</div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link" id="explore">
         <img src="images/yt-sidebar/explore.svg">
         <div>Explore</div>
+      </div>
+      <div class="sidebar-link" id="shorts">
+        <img src="images/yt-sidebar/youtube-shorts.svg">
+        <div>
+          Shorts
+        </div>
+      </div>
+
+      <div class="sidebar-link" id="create-button">
+        <img src="images/yt-sidebar/add.png">
       </div>
       <div class="sidebar-link">
         <img src="images/yt-sidebar/subscriptions.svg">
         <div>Subscriptions</div>
       </div>
-      <div class="sidebar-link">
+
+     
+
+      <div class="sidebar-link" id="originals">
         <img src="images/yt-sidebar/originals.svg">
         <div>Originals</div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link" id="youtube-music">
         <img src="images/yt-sidebar/youtube-music.svg">
         <div>Youtube Music</div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link" id="library">
         <img src="images/yt-sidebar/library.svg">
         <div>Library</div>
       </div> 
+
+      <div class="sidebar-link" id="current-user-picture-sidebar">
+        <img class="current-user-picture" src="images/pfp/profile-pic.jpg">
+        <div>You</div>
+    </div>
     
     </nav>
 
-    <main>
+    <main class="main">
       <section class="video-grid">
         <!--Channel 1-->
         <div class="video-preview">

@@ -1,3 +1,12 @@
+@media (max-width:480px) {
+    body{
+        padding: 0 !important;
+    }
+    .main{
+        padding:15px;
+        width:100%
+    }
+}
 p{
     margin-top:0;
     margin-bottom:0;

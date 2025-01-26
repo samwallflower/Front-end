@@ -1,3 +1,4 @@
+
 .sidebar{
     position:fixed;
     left:0;
@@ -16,6 +17,61 @@
     align-items:center;
     cursor:pointer;
 }
+
+#create-button,#current-user-picture-sidebar{
+    display:none;
+}
+@media (max-width:480px) {
+    #explore,#youtube-music,#originals,#library{
+        display: none;
+    }
+    #create-button,#current-user-picture-sidebar{
+        display: flex;
+    }
+    .sidebar{
+        position: fixed;
+        top:unset;
+        bottom:0;
+        left:0;
+        right:2px;
+        height:55px;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index:9999;
+    }
+    .sidebar-link{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height:45px;
+        width:30px;
+        margin:4px;
+    }
+    .sidebar-link img {
+        padding:3px;
+        justify-content: center;
+        align-items: center;
+        height:24px;
+        width:24px;
+        margin-bottom: 0px;
+    
+    }
+    .sidebar-link div{
+        margin-top:0;
+        margin-bottom: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
+
+
 .sidebar-link:hover{
     background-color:rgb(235, 235, 235);
 }
