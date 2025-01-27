@@ -1,6 +1,9 @@
 @media (max-width:480px) {
     body{
-        padding: 0 !important;
+        padding-top: 60px !important;
+        padding-left: 0 !important;
+        padding-right: 0;
+        padding-bottom: 60px;
     }
     .main{
         padding:15px;

@@ -2,6 +2,9 @@
     #header-pfp{
         display:none;
     }
+    .left-section{
+        margin-left: 15px;
+    }
     .menu,
     .upload-icon-container,
     .youtube-apps-icon-container,
@@ -15,7 +18,7 @@
     }
     .right-section{
         width:100px !important;
-        margin-right:20px;
+        margin-right:10px;
         display:flex;
         align-items: center;
         justify-content:space-between;
